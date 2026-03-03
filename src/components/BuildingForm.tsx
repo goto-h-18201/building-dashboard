@@ -133,9 +133,9 @@ export function BuildingForm({ onSubmit }: BuildingFormProps) {
                   type="checkbox"
                   checked={equipment[key]}
                   onChange={(e) => setEquipment((prev) => ({ ...prev, [key]: e.target.checked }))}
-                  className="w-4 h-4 accent-emerald-600 shrink-0"
+                  className="custom-check w-4 h-4 m-0 shrink-0 cursor-pointer"
                 />
-                <span className="text-sm text-emerald-700">{label}</span>
+                <span className="text-sm leading-none text-emerald-700">{label}</span>
               </label>
             ))}
           </div>
